@@ -10,22 +10,63 @@ namespace ByteExercises
     {
         static void Main(string[] args)
         {
-            // --------------       BYTE EXERCİSES       -----------------------
 
-            byte first = 5;
-            byte second = 15;
-            // byte third = 260;
+            // --------------       VARİABLES       -----------------------
+
+            int number1 = 10;
+            int number2 = 20;
+            int number3 = 30;
+
+            string stringNumber1 = "40";
+            string stringNumber2 = "50";
+            string word1 = "Hello";
+            string word2 = "World";
+
+            float floatNumber1 = 1.1f;
+            double doubleNumber1 = 2.2;
+            decimal decimalNumber1 = 3.3m;
+
+            bool bool1 = true;
+            bool bool2 = false;
+
+            object null1 = null;
+
+            Console.WriteLine(number1);
+            Console.WriteLine(number2);
+            Console.WriteLine(number3);
+
+            Console.WriteLine(stringNumber1);
+            Console.WriteLine(stringNumber2);
+            Console.WriteLine(word1);
+            Console.WriteLine(word2);
+
+            Console.WriteLine(floatNumber1);
+            Console.WriteLine(doubleNumber1);
+            Console.WriteLine(decimalNumber1);
+
+            Console.WriteLine(bool1);
+            Console.WriteLine(bool2);
+
+            Console.WriteLine(null1);
+
+
+            // --------------       BYTE EXERCISES       -----------------------
+
+            byte firstByte = 5;
+            byte secondByte = 15;
+            //byte thirdByte = 260;
             byte maxByte = byte.MaxValue; // .Maxvalue ile alabilecek max değer verilir.
             byte minByte = byte.MinValue; // .MinValue ile alabilecek min değer verilir.
 
-            Console.WriteLine(first);
-            Console.WriteLine(second);
-            //  Console.WriteLine(third); bunu yazdıramadı çünkü byte 0-255 arası değer tutabilir.
+            Console.WriteLine(firstByte);
+            Console.WriteLine(secondByte);
+            //  Console.WriteLine(thirdByte); bunu yazdıramadı çünkü byte 0-255 arası değer tutabilir.
             Console.WriteLine(maxByte);
             Console.WriteLine(minByte);
-            Console.ReadLine();
 
-            // --------------       BYTE EXERCİSES       -----------------------
+
+
+            // --------------       SHORT EXERCISES       -----------------------
 
             short firstVariable = 1;
             short secondVariable = 25500;
@@ -36,10 +77,10 @@ namespace ByteExercises
             Console.WriteLine(secondVariable);
             Console.WriteLine(thirdVariable);
             Console.WriteLine(fourthVariable);
-            Console.ReadLine();
 
 
-            // --------------       INT EXERCİSES       -----------------------
+
+            // --------------       INT EXERCISES       -----------------------
 
             int firstInt = 123123;
             int secondInt = int.MaxValue;
@@ -48,9 +89,9 @@ namespace ByteExercises
             Console.WriteLine(firstInt);
             Console.WriteLine(secondInt);
             Console.WriteLine(thirdInt);
-            Console.ReadLine();
 
-            // --------------       LONG EXERCİSES       -----------------------
+
+            // --------------       LONG EXERCISES       -----------------------
 
             // 10 karakterden fazla sayıları tutabilir. Örneğin tc kimlik numaraları 11 haneli olduğu için long ile yazılır.
 
@@ -61,9 +102,9 @@ namespace ByteExercises
             Console.WriteLine(firstLong);
             Console.WriteLine(secondLong);
             Console.WriteLine(thirdLong);
-            Console.ReadLine();
 
-            // --------------       FLOAT EXERCİSES       -----------------------
+
+            // --------------       FLOAT EXERCISES       -----------------------
 
             // float değer belirlerken value kısmının sonuna f konulur. Eğer f konulmazsa sistem bunu otomatik olarak double olarak kabul eder.
 
@@ -76,9 +117,9 @@ namespace ByteExercises
             Console.WriteLine(secondFloat);
             Console.WriteLine(thirdFlooat);
             Console.WriteLine(fourthFloat);
-            Console.ReadLine();
 
-            // --------------       DOUBLE EXERCİSES       -----------------------
+
+            // --------------       DOUBLE EXERCISES       -----------------------
 
             // Double, flota göre virgülden sonra daha fazla sayı tutabilir. Bu nedenle daha ince hesaplamalar double ile yapılır.
 
@@ -89,9 +130,9 @@ namespace ByteExercises
             Console.WriteLine(firstDouble);
             Console.WriteLine(secondDouble);
             Console.WriteLine(thirdDouble);
-            Console.ReadLine();
 
-            // --------------       BYTE EXERCİSES       -----------------------
+
+            // --------------       BYTE EXERCISES       -----------------------
 
             // Decimal, double göre virgülden sonra daha fazla sayı tutabilir. Bu nedenle çok daha ince hesaplamalar decimal ile yapılır.
             // Decimal tanımlarken value'nin sonuna m eklenir. Aksi halde sistem otomatik olarak double olarak kabul eder.
@@ -103,10 +144,9 @@ namespace ByteExercises
             Console.WriteLine(firstDecimal);
             Console.WriteLine(secondDecimal);
             Console.WriteLine(thirdDecimal);
-            Console.ReadLine();
 
 
-            // --------------       CHAR EXERCİSES       -----------------------
+            // --------------       CHAR EXERCISES       -----------------------
 
             // Sadece tek bir karakteri tutmak için yapılan tanımlamalarda kullanılır. Char tanımlarken sadece tek tırnak kullanılır
 
@@ -115,20 +155,20 @@ namespace ByteExercises
 
             Console.WriteLine(firtChar);
             Console.WriteLine(secondChar);
-            Console.ReadLine();
 
-            // --------------       STRING EXERCİSES       -----------------------
+
+            // --------------       STRING EXERCISES       -----------------------
 
             // Char değişkeninden farklı olarak sadece bir karakteri değil metni tutar.
 
-            string firstString = "Elma";
-            string secondString = "Portakal";
+            string firstString = "Apple";
+            string secondString = "Orange";
 
             Console.WriteLine(firstString);
             Console.WriteLine(secondString);
-            Console.ReadLine();
 
-            // --------------       BOOLEAN EXERCİSES       -----------------------
+
+            // --------------       BOOLEAN EXERCISES       -----------------------
 
             //Boolean, sadece true veya false olarak sonuç doğurur.
 
@@ -140,7 +180,8 @@ namespace ByteExercises
             Console.WriteLine(secondBoolean);
             Console.WriteLine(thirdBoolean);
 
-            //--------------OBJECT EXERCİSES---------------------- -
+
+            //--------------OBJECT EXERCISES-----------------------
 
             //Tüm variable'ları içerisinde barındırabilir. Type ayrımı yapmaz.
 
@@ -151,15 +192,328 @@ namespace ByteExercises
             Console.WriteLine(firstObject);
             Console.WriteLine(secondObject);
             Console.WriteLine(thirdObject);
+
+
+            //--------------OPERATORS EXERCISES-----------------------
+
+
+            //             ARİTMETİK OPERATÖRLER
+
+
+            // Toplama Operatörü : +
+
+            int total = number1 + number2;
+            // int a = int a + 5; ifadesi ile int a +=5; aynı anlama gelmektedir. Daha kolay yazım şeklidir.
+
+            Console.WriteLine(total);
+
+
+            // Çıkarma Operatörü : -
+
+            int dif = number2 - number1;
+            // int a = int a - 5; ifadesi ile int a -=5; aynı anlama gelmektedir. Daha kolay yazım şeklidir.
+
+            Console.WriteLine(dif);
+
+
+            // Çarpma Operatörü : *
+
+            int multi = number1 * number2;
+            // int a = int a * 5; ifadesi ile int a *=5; aynı anlama gelmektedir. Daha kolay yazım şeklidir.
+
+            Console.WriteLine(multi);
+
+
+            // Bölme Operatörü : /
+
+            int div = number2 / number1;
+            // int a = int a / 5; ifadesi ile int a /=5; aynı anlama gelmektedir. Daha kolay yazım şeklidir.
+
+            Console.WriteLine(div);
+
+
+            // Mod Alma Operatörü : %   -- Bölme işlemindeki kalanı gösterir.
+
+            int mod = number2 % number1;
+
+            Console.WriteLine(mod);
+
+
+            // Artırma Operatörü : +
+
+            number1 = number1 + 1;      // Sayımızı bir artırır.
+            number1++;                  // Sayımızı bir artırır. Daha kolay yazım şeklidir.
+
+
+            // Azaltma Operatörü : -
+
+            number1 = number1 - 1;      // Sayımızı bir azaltır.
+            number1--;                  // Sayımızı bir azaltır. Daha kolay yazım şeklidir.
+
+
+
+            //             KARŞILAŞTIRMA OPERATÖRLERİ
+
+
+            // Eşittir Operatörü : ==
+
+            // Eşittir operatörü olarak "==" kullanılır. "=" ile karıştırılmaması gerekir. "=" eşittir operatörü değil atama operatörüdür.
+
+            bool equal = number1 == number2; // Eğer number1 ve number2 birbirine eşit ise true değeri döndür. Eğer number1 ve number2 birbirine eşit değil ise false değer döndürür.
+
+            Console.WriteLine(equal);
+
+
+            // Eşit Değildir Operatörü : !=
+
+            bool notEqual = number1 != number2; // Number1, number2'ye eşit değil mi anlamına değildir. Eğer eşit değilse true, eşit ise false değerini döndürür.
+
+            Console.WriteLine(notEqual);
+
+
+            // Büyüktür Operatörü : >
+
+            bool bigger = number1 > number2; // number1 büyüktür number2'den anlamına gelmektedir. Eğer büyük ise true, değil ise false değer döndürür.
+
+            Console.WriteLine(bigger);
+
+
+            // Büyük Eşittir Operatörü : >=
+
+            bool biggerOrEqual = number1 >= number2; // number1 büyüktür veya eşittir number2'den anlamına gelmektedir. Eğer büyük veya eşit ise true, değil ise false değer döndürür.
+
+            Console.WriteLine(biggerOrEqual);
+
+
+            // Küçüktür Operatörü : <
+
+            bool lower = number1 > number2; // number1 küçüktür number2'den anlamına gelmektedir. Eğer küçük ise true, değil ise false değer döndürür.
+
+            Console.WriteLine(lower);
+
+
+            // Küçük Eşittir Operatörü : <=
+
+
+            bool lowerOrEqual = number1 >= number2; // number1 küçüktür veya eşittir number2'den anlamına gelmektedir. Eğer küçük veya eşit ise true, değil ise false değer döndürür.
+
+            Console.WriteLine(lowerOrEqual);
+
+
+
+            //             MANTIKSAL OPERATÖRLER
+
+            // Ve Operatörü : &&
+
+            bool and = number1 == number2 && number1 == 4; // number1, eşit ise number2'ye ve number1 eşit ise 4'e true sonuç döndürür. Aksi halde falde değerini döndürür. Eğer tüm koşullar true ise sonuncu değişkeni döndürür, tüm koşullar true değilse bulduğu (solda sağa doğru) ilk false değerini döndürür.
+
+            Console.WriteLine(and);
+
+
+            // Veya Operatörü : ||
+
+            bool or = number1 == number2 && number1 == 4; // number1, eşit ise number2'ye veya number1 eşit ise 4'e true sonuç döndürür.&& operatöründen farklı olarak tüm koşulların true dönmesi gerekmiyor.Soldan sağa doğru ilk true değerini döndürür. Tüm koşullar false ise son false değerini döndürür.
+
+            Console.WriteLine(or);
+
+
+            // Değil Opeatörü : !
+
+            // Değil anlamına gelmektedir. Mevcut değerinin aksini döndürür. True olan false olur, false olan true olur.
+
+            bool not = number1 == number2;
+
+            Console.WriteLine(!not);   // number1 ve number2 birbirine eşit olmadığı için false değeri dönmesi gerekirken "!not" yazıldığı için false'in değili olan true sonucunu döndüür.
+
+
+
+            // --------------       GET VALUE EXERCISES (DEĞER ALMA)      ----------------------- 
+
+            Console.WriteLine("Please Enter Your Name");
+            // string name = Console.ReadLine();
+            // Console.WriteLine("Your name is"+ " "  + name);      
+
+            Console.WriteLine("Please Enter Your Surname");
+            // string surname = Console.ReadLine();
+            // Console.WriteLine("Your surname is"+ " " + surname);
+
+            //Console.WriteLine($"Your are {name} {surname}");
+
+
+
+
+            // --------------       TÜR DÖNÜŞÜMÜ      ----------------------- 
+
+            // Console.Readline() ile alınan verilerin tamamı string türündedir. Diğer tiplerde kullanacak isek tür dönüşümü yapmamız gerekir.
+
+
+            //             INT.PARSE
+
+            // Sadece "String" tipindeki değişkeni "Int" tipine dönüştürür.
+
+            int intParseExample1 = int.Parse(stringNumber1);
+
+            Console.WriteLine(intParseExample1.GetType());   // value.GetType() methodu veri tipini döndürür. 
+            Console.WriteLine(intParseExample1);
+
+
+            Console.WriteLine("Please Enter Your Money");
+
+            //int haveBread = int.Parse(Console.ReadLine())/5; // 1 adet ekmeğin 5 TL olduğu kabul edilerek kaç ekmek alabileceğini hesaplıyoruz.
+            //Console.WriteLine($"You can buy {haveBread} bread"); 
+
+
+
+            //             CONVERT.TOINT32
+
+            // "Int" tipine dönüştürülebilecek tüm veri tiplerini "Int" veri tipine dönüştürür. Ondalıklı sayıların sadece tam sayı kısmını alır, Ondalık kısmı dışlar.
+
+            int toInt32Example1 = Convert.ToInt32(stringNumber1);
+
+            Console.WriteLine(toInt32Example1.GetType());
+            Console.WriteLine(toInt32Example1);
+
+
+            int toInt32Example2 = Convert.ToInt32(floatNumber1);
+            Console.WriteLine(toInt32Example2.GetType());
+            Console.WriteLine(toInt32Example2);
+
+
+
+            //             TO.STRING
+
+            // Herhangi bir veri tipinden string veri tipine dönüştürme yapar.
+
+            string toStringExamples1 = number1.ToString();
+
+            Console.WriteLine(toStringExamples1.GetType());
+            Console.WriteLine(toStringExamples1);
+
+            string toStringExamples2 = bool1.ToString();
+
+            Console.WriteLine(toStringExamples2.GetType());
+            Console.WriteLine(toStringExamples2);
+
+
+            string toStringExamples3 = floatNumber1.ToString();
+
+            Console.WriteLine(toStringExamples3.GetType());
+            Console.WriteLine(toStringExamples3);
+
+
+
+            // --------------      IF ELSE      ----------------------- 
+
+            // if ile bir koşul yazılır. Koşul boolean bir sonuç doğurur. Eğer true döndürürse if'in içerisindeki kod çalışır ve if'in içerisinden çıkar, eğer false döndürürse varsa else if'e, else if yok ise doğrudan else'teki kodu çalıştırır.
+
+
+            //Aşağıda bir if yapısıne örnek verilmiştir. VS hata vermemesi için if'in içerisine koşul yazılmıştır.
+
+            if (number1 == 1)
+            {
+
+            }
+            else if (number2 == 2)
+            {
+
+            }
+            else
+            {
+
+            }
+
+            Console.WriteLine("Please Enter Student's note");
+            int studentsNote1 = int.Parse(Console.ReadLine());
+            if (studentsNote1 >= 80)
+            {
+                Console.WriteLine("Your note is A");
+            }
+            else if (studentsNote1 >= 60 && studentsNote1 < 80)
+            {
+                Console.WriteLine("Your note is B");
+            }
+            else if (studentsNote1 >= 40 && studentsNote1 < 60)
+            {
+                Console.WriteLine("Your note is C");
+            }
+            else
+            {
+                Console.WriteLine("You are unsuccesfull");
+            }
+
+
+            // --------------       SWICH CASE      ----------------------- 
+
+
+            //Aşağıda bir if yapısıne örnek verilmiştir. VS hata vermemesi için if'in içerisine koşul yazılmıştır.
+
+            switch (word1)
+            {
+                case "A":
+                    Console.WriteLine();
+                    break;
+
+                case "B":
+                    Console.WriteLine();
+                    break;
+
+                case "C":
+                    Console.WriteLine();
+                    break;
+
+                case "D":
+                    Console.WriteLine();
+                    break;
+
+                default:
+                    Console.WriteLine();
+                    break;
+
+            }
+
+
+            Console.WriteLine("Please Enter Your Phone Brand?");
+            string phoneBrand = Console.ReadLine().ToLower(); // ToLower methodu ile tüm string küçük harfe çevrilir. Bu sayede kullanıcının büyük harfle yazması durumunda kodun doğru çalışmasını sağlıyoruz. Çünkü C# case sensetive bir yazılım dilir.
+
+
+            switch (phoneBrand)
+            {
+                case "apple":
+                    Console.WriteLine("You are using IOS system");
+                    break;
+
+                case "samsung":
+                    Console.WriteLine("You are using Android system");
+                    break;
+
+                case "huawei":
+                    Console.WriteLine("You are using Android system");
+                    break;
+
+                case "xiaomi":
+                    Console.WriteLine("You are using Android system");
+                    break;
+
+                default:
+                    Console.WriteLine("You did not enter your phone brand correctly");
+                    break;
+
+            }
+
+
+
+            // --------------       LOOPS (DÖNGÜLER)     ----------------------- 
+
+            // Koşul sağlanana kadar döngü dönmeye devam eder. Koşul sağlandığında döngüden çıkar.
+            // 4 tane döngü vardır. 1- For, 2- While, 3- Do While, 4- Foreach
+
+
+
+
+
+
+
             Console.ReadLine();
-
-            //--------------OPERATORS EXERCİSES---------------------- -
-
-
-
-
-
-
 
 
         }
