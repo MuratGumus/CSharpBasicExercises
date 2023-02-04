@@ -508,6 +508,118 @@ namespace ByteExercises
             // 4 tane döngü vardır. 1- For, 2- While, 3- Do While, 4- Foreach
 
 
+            //             FOR DÖNGÜSÜ
+
+            // For döngüsünde koşul 3 aşamada yazılır. 1. aşamada değişkenimize bir değer ataması yaparız. 2. aşamada koşulumuzu yazarız. 3. aşamada ise döngünün 1 kez dönmesi halinde ne yapılması gerektiğini yazarız. Çalışma sırası 1- 1. aşama, 2- 2. aşama (koşul sağlıyorsa alt satıra geçer, koşul sağlamıyorsa for döngüsünden çıkar), 3- altta yazılan kod çalışır 4- 3. aşama. 
+
+            // 1. aşamada yazılan değer 2. aşamadaki koşulu sağlıyorsa altta yazan kodu çalıştırır ve 3. aşamaya geçer. 3. aşamada değişken yeni bir değer alır ve 1. aşamaya döner.
+
+            // Döngü döndüğü sürece yap manasında bir döngüdür.
+
+
+
+            //Aşağıda for döngüsüme örnek verilmiştir. VS hata vermemesi için if'in içerisine koşul yazılmıştır.
+
+            for (int forExample1 = 1; forExample1 <= 10; forExample1++)  // 1'den 10'a kadar olan sayıları yazdırır.
+                Console.WriteLine(forExample1);
+
+
+            // Aşağıda iç içe döngülere örnek verilmiştir. 
+
+            for (int forExample2 = 1; forExample2 <= 10; forExample2++)
+            {
+                for (int forExample3 = 1; forExample3 <= forExample2; forExample3++)
+                {
+                    Console.Write(forExample3);
+
+                }
+                Console.WriteLine("");
+            }
+
+
+            //             WHILE DÖNGÜSÜ
+
+            // İçerideki döngü çalıştığı süre boyunca while döngüsü sonuç döndürmeye devam eder. İlk koşulu kontrol eder, koşul sağlanıyorsa döndürür. Koşul sağlamazsa while döngüsüne hiç girmeden devam eder.For ile benzerdir. 
+
+            // Döngü döndüğü sürece yap manasında bir döngüdür.
+
+            // Aşağıda while döngüsüme örnek verilmiştir. VS hata vermemesi için if'in içerisine koşul yazılmıştır.
+
+
+            int whileExample1 = 1;
+            while (whileExample1 <= 10)
+            {
+                Console.WriteLine(whileExample1);
+                whileExample1++;
+            }
+
+
+
+            //             DO WHILE DÖNGÜSÜ
+
+            // While döngüsüyle aynıdır. Sadece bir fark vardır. Do while döngüsünde while döngüsüne girmeden önce bir sefer "DO" yu çalıştırır sonra devam eder. Eğer koşul sağlanmıyorsa while döngüsünde hiç sonuç döndürülmez iken do while döngüsünde koşul sağlanmasa dahi bir kez sonuç döndürür.
+
+            // Önce yap, döngü döndüğü sürece yapmaya devam et manasında bir döngüdür.
+
+
+            // Aşağıda Do While döngüsüme örnek verilmiştir. VS hata vermemesi için if'in içerisine koşul yazılmıştır.
+
+            int doWhileExample1 = 1;
+            do
+            {
+                Console.WriteLine(doWhileExample1);
+                doWhileExample1++;
+            } while (doWhileExample1 <= 10);
+
+
+            // Aşağıda 1'den 100'e kadar sayıların toplamını bulan bir do while döngüsü örneği yazılmıştır.
+
+            int doWhileNumber1 = 1;
+            int doWhileTotal = 0;
+
+            do
+            {
+                doWhileTotal += doWhileNumber1;
+                doWhileNumber1++;
+            } while (doWhileNumber1 <= 100);
+
+
+            //             BREAK
+
+            // Döngü içerisinde koşulun sağlanması durumunda döngüyü kırıp döngüden çıkmasını istediğimiz durumlarda break kullanırız.
+
+            // Aşağıda Break'e örnek verilmiştir. VS hata vermemesi için if'in içerisine koşul yazılmıştır.
+
+            for (int breakExample1 = 1; breakExample1 <= 10; breakExample1++)
+            {
+                if (breakExample1 == 5)
+                {
+                    break;
+                }
+                Console.WriteLine(breakExample1);
+            }
+
+
+            //             CONTINUE
+
+            // Döngü içerisinde koşulun sağlanması durumunda 1 defaya mahsus döngüyü kırar, o döngüyü çalıştırmış kabul ederek döngünün içerisinden çıkmadan bir sonraki aşamaya geçer.
+
+            // Aşağıda Break'e örnek verilmiştir. VS hata vermemesi için if'in içerisine koşul yazılmıştır.
+
+            for (int continueExample1 = 1; continueExample1 <= 10; continueExample1++)
+            {
+                if (continueExample1 == 5)
+                {
+                    continue;
+                }
+            }
+
+
+
+
+
+            // --------------       ARRAY     ----------------------- 
+
 
 
 
