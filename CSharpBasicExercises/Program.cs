@@ -774,8 +774,8 @@ namespace ByteExercises
         /// <returns>Hipotenüsü return eder</returns>
         static double MethodExample4(double MethodExample4Number1, double MethodExample4Number2)
         {
-            double hipotenus = (MethodExample4Number1 * MethodExample4Number1) + (MethodExample4Number2 * MethodExample4Number2);
-            return Math.Sqrt(hipotenus);
+            double MethodExample4Hipotenus = (MethodExample4Number1 * MethodExample4Number1) + (MethodExample4Number2 * MethodExample4Number2);
+            return Math.Sqrt(MethodExample4Hipotenus);
 
         }
     }
