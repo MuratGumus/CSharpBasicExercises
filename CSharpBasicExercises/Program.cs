@@ -635,7 +635,7 @@ namespace ByteExercises
 
             Console.WriteLine(arrayNumbers1[1]); //Dizinin 1. değerini yazdır demek. 20 yazdırır.
 
-            for (int i= 0; i < arrayNumbers1.Length; i++)
+            for (int i = 0; i < arrayNumbers1.Length; i++)
             {
                 Console.WriteLine(arrayNumbers1[i]);
             }
@@ -694,6 +694,33 @@ namespace ByteExercises
                 Console.WriteLine(item);
             }
 
+            //MethodExample1(); // Bu method konsola "Hello World!" yazdırır
+
+            //MethodExample2(); // Bu method parantez içerisine yazılan iki değeri toplar. Değer döndürmeyen methodla toplar
+
+            //MethodExample3(1, 2); // Bu method parantez içerisine yazılan iki değeri toplar. Değer döndüren methodla toplar
+
+            Console.WriteLine(MethodExample3(3, 4)); // Methodun doğrudan kullanımı
+
+            int MethodExample3Value = MethodExample3(1, 2); //Methodun atama yapılarak kullanımı
+
+            Console.WriteLine(MethodExample3Value);
+
+
+            //MethodExample4(); //  Bu method double türünde hipotenüsü hesaplar. Değer döndürür.
+            double MethodExample4Value = MethodExample4(3.3, 4.4); // Methodun doğrudan kullanımı
+
+
+            //Console.WriteLine("enter"); // Methodun kullanıcının girdi alınarak kullanımı
+            //double MethodExample4Number3 = Convert.ToDouble(Console.ReadLine());
+
+            //Console.WriteLine("enter");
+            //double MethodExample4Number4 = Convert.ToDouble(Console.ReadLine());
+
+            //Console.WriteLine(MethodExample4(MethodExample4Number3, MethodExample4Number4));
+
+            //--------
+
 
 
 
@@ -701,8 +728,58 @@ namespace ByteExercises
 
 
             Console.ReadLine();
+        }
+        static void MethodExample1()
+        {
+
+            // --------------       METHOD    ----------------------- 
+
+            // Yukarıda Parametresiz - Geriye Değer Döndürmeyen Method örnek verilmiştir. Kodumuzumu yazdığımız static'ten dışarı çıkarak yeni bir statik açarak method tanımlaması yapıyoruz. 
+
+            // methodExamples1 ismiyle kaydettiğimiz method aşağıda yazılan "Hello World" yazısını konsola yazdırıyor. Bu methodu yazdıktan sonra kodumuzun istediğimiz yerine MethodExample1 yazdığımızda doğrudan konsola "Hello World!" yazdırılacak
+
+            // methodu çalıştırmak için methodismi(); yazmamız lazım. Örnek: methodExample(); yazdığımızda konsola "Hello World!" yazdırır.
+
+            Console.WriteLine("Hello World!");
+
 
 
         }
+
+        static void MethodExample2()
+        {
+
+            // Yukarıda Parametreli - Geriye Değer Döndürmeyen Method örnek verilmiştir. Kodumuzumu yazdığımız static'ten dışarı çıkarak yeni bir statik açarak method tanımlaması yapıyoruz.
+
+            Console.WriteLine("Please Enter Your First Number");
+            int methodNumber1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please Enter Your Second Number");
+            int methodNumber2 = Convert.ToInt32(Console.ReadLine());
+            int MethodExample2Total = methodNumber1 + methodNumber2;
+            Console.WriteLine(MethodExample2Total);
+
+        }
+
+        static int MethodExample3(int methodNumber3, int methodNumber4)
+        {
+            int MethodExample3Total = methodNumber3 + methodNumber4;
+            return MethodExample3Total;
+        }
+
+        /// <summary> // Methodun içerisine "///" yazarsak methodla ilgili bilgiler vereceğimiz satırlar  
+        /// Bu fonksiyon girilen kenar uzunluklarının hipotenüsünü hesaplar
+        /// </summary>
+        /// <param name="MethodExample4Number1">Uzunluk metre cinsinden</param>
+        /// <param name="MethodExample4Number2">Uzunluk metre cinsinden</param>
+        /// <returns>Hipotenüsü return eder</returns>
+        static double MethodExample4(double MethodExample4Number1, double MethodExample4Number2)
+        {
+            double hipotenus = (MethodExample4Number1 * MethodExample4Number1) + (MethodExample4Number2 * MethodExample4Number2);
+            return Math.Sqrt(hipotenus);
+
+        }
     }
+
 }
+
+
