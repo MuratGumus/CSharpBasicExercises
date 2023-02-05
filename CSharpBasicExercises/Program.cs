@@ -407,7 +407,7 @@ namespace ByteExercises
             // if ile bir koşul yazılır. Koşul boolean bir sonuç doğurur. Eğer true döndürürse if'in içerisindeki kod çalışır ve if'in içerisinden çıkar, eğer false döndürürse varsa else if'e, else if yok ise doğrudan else'teki kodu çalıştırır.
 
 
-            //Aşağıda bir if yapısıne örnek verilmiştir. VS hata vermemesi için if'in içerisine koşul yazılmıştır.
+            //Aşağıda bir if yapısıne örnek verilmiştir. 
 
             if (number1 == 1)
             {
@@ -422,30 +422,30 @@ namespace ByteExercises
 
             }
 
-            Console.WriteLine("Please Enter Student's note");
-            int studentsNote1 = int.Parse(Console.ReadLine());
-            if (studentsNote1 >= 80)
-            {
-                Console.WriteLine("Your note is A");
-            }
-            else if (studentsNote1 >= 60 && studentsNote1 < 80)
-            {
-                Console.WriteLine("Your note is B");
-            }
-            else if (studentsNote1 >= 40 && studentsNote1 < 60)
-            {
-                Console.WriteLine("Your note is C");
-            }
-            else
-            {
-                Console.WriteLine("You are unsuccesfull");
-            }
+            //Console.WriteLine("Please Enter Student's note");
+            //int studentsNote1 = int.Parse(Console.ReadLine());
+            //if (studentsNote1 >= 80)
+            //{
+            //    Console.WriteLine("Your note is A");
+            //}
+            //else if (studentsNote1 >= 60 && studentsNote1 < 80)
+            //{
+            //    Console.WriteLine("Your note is B");
+            //}
+            //else if (studentsNote1 >= 40 && studentsNote1 < 60)
+            //{
+            //    Console.WriteLine("Your note is C");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("You are unsuccesfull");
+            //}
 
 
             // --------------       SWICH CASE      ----------------------- 
 
 
-            //Aşağıda bir if yapısıne örnek verilmiştir. VS hata vermemesi için if'in içerisine koşul yazılmıştır.
+            //Aşağıda bir if yapısıne örnek verilmiştir. 
 
             switch (word1)
             {
@@ -472,33 +472,33 @@ namespace ByteExercises
             }
 
 
-            Console.WriteLine("Please Enter Your Phone Brand?");
-            string phoneBrand = Console.ReadLine().ToLower(); // ToLower methodu ile tüm string küçük harfe çevrilir. Bu sayede kullanıcının büyük harfle yazması durumunda kodun doğru çalışmasını sağlıyoruz. Çünkü C# case sensetive bir yazılım dilir.
+            //Console.WriteLine("Please Enter Your Phone Brand?");
+            //string phoneBrand = Console.ReadLine().ToLower(); // ToLower methodu ile tüm string küçük harfe çevrilir. Bu sayede kullanıcının büyük harfle yazması durumunda kodun doğru çalışmasını sağlıyoruz. Çünkü C# case sensetive bir yazılım dilir.
 
 
-            switch (phoneBrand)
-            {
-                case "apple":
-                    Console.WriteLine("You are using IOS system");
-                    break;
+            //switch (phoneBrand)
+            //{
+            //    case "apple":
+            //        Console.WriteLine("You are using IOS system");
+            //        break;
 
-                case "samsung":
-                    Console.WriteLine("You are using Android system");
-                    break;
+            //    case "samsung":
+            //        Console.WriteLine("You are using Android system");
+            //        break;
 
-                case "huawei":
-                    Console.WriteLine("You are using Android system");
-                    break;
+            //    case "huawei":
+            //        Console.WriteLine("You are using Android system");
+            //        break;
 
-                case "xiaomi":
-                    Console.WriteLine("You are using Android system");
-                    break;
+            //    case "xiaomi":
+            //        Console.WriteLine("You are using Android system");
+            //        break;
 
-                default:
-                    Console.WriteLine("You did not enter your phone brand correctly");
-                    break;
+            //    default:
+            //        Console.WriteLine("You did not enter your phone brand correctly");
+            //        break;
 
-            }
+            //}
 
 
 
@@ -518,7 +518,7 @@ namespace ByteExercises
 
 
 
-            //Aşağıda for döngüsüme örnek verilmiştir. VS hata vermemesi için if'in içerisine koşul yazılmıştır.
+            //Aşağıda for döngüsüme örnek verilmiştir.
 
             for (int forExample1 = 1; forExample1 <= 10; forExample1++)  // 1'den 10'a kadar olan sayıları yazdırır.
                 Console.WriteLine(forExample1);
@@ -543,7 +543,7 @@ namespace ByteExercises
 
             // Döngü döndüğü sürece yap manasında bir döngüdür.
 
-            // Aşağıda while döngüsüme örnek verilmiştir. VS hata vermemesi için if'in içerisine koşul yazılmıştır.
+            // Aşağıda while döngüsüme örnek verilmiştir.
 
 
             int whileExample1 = 1;
@@ -562,7 +562,7 @@ namespace ByteExercises
             // Önce yap, döngü döndüğü sürece yapmaya devam et manasında bir döngüdür.
 
 
-            // Aşağıda Do While döngüsüme örnek verilmiştir. VS hata vermemesi için if'in içerisine koşul yazılmıştır.
+            // Aşağıda Do While döngüsüme örnek verilmiştir.
 
             int doWhileExample1 = 1;
             do
@@ -588,7 +588,7 @@ namespace ByteExercises
 
             // Döngü içerisinde koşulun sağlanması durumunda döngüyü kırıp döngüden çıkmasını istediğimiz durumlarda break kullanırız.
 
-            // Aşağıda Break'e örnek verilmiştir. VS hata vermemesi için if'in içerisine koşul yazılmıştır.
+            // Aşağıda Break'e örnek verilmiştir. 
 
             for (int breakExample1 = 1; breakExample1 <= 10; breakExample1++)
             {
@@ -604,7 +604,7 @@ namespace ByteExercises
 
             // Döngü içerisinde koşulun sağlanması durumunda 1 defaya mahsus döngüyü kırar, o döngüyü çalıştırmış kabul ederek döngünün içerisinden çıkmadan bir sonraki aşamaya geçer.
 
-            // Aşağıda Break'e örnek verilmiştir. VS hata vermemesi için if'in içerisine koşul yazılmıştır.
+            // Aşağıda Break'e örnek verilmiştir.
 
             for (int continueExample1 = 1; continueExample1 <= 10; continueExample1++)
             {
@@ -618,12 +618,81 @@ namespace ByteExercises
 
 
 
-            // --------------       ARRAY     ----------------------- 
+            // --------------       ARRAY (DİZİLER)    ----------------------- 
+
+
+            // Variable'a tek bir dizi ile birden fazla değer verilebilir. [] ile gösterilir. Diziler 0 dan başlar. x.lenght ile dizinin uzunluğu yani içerisinde kaç tane değer olduğunu bulabiliriz. (x yerine array'in adı yazılacak.)
+
+            // Aşağıda Array'e örnek verilmiştir. 
+
+
+            int[] arrayNumbers1 = new int[4]; // Burada bir array tanımlıyoruz ama içerisine değer ataması yapmıyoruz. [] içerisine yazdığımız sayı kadar değer yeri açıyoruz. Bu yerleri daha sonra doldurabiliyoruz.
+
+            arrayNumbers1[0] = 10;
+            arrayNumbers1[1] = 20;
+            arrayNumbers1[2] = 30;
+            arrayNumbers1[3] = 40;
+
+            Console.WriteLine(arrayNumbers1[1]); //Dizinin 1. değerini yazdır demek. 20 yazdırır.
+
+            for (int i= 0; i < arrayNumbers1.Length; i++)
+            {
+                Console.WriteLine(arrayNumbers1[i]);
+            }
+
+            // İstersen array'i tanımladıktan sonra değerleri de aynı satırda atayabiliriz. Bunun için {} kullanırız ve her değerin arasına virgül koyarız.
+
+            string[] arrayString1 = { "Car", "Phone", "Book", "Computer" };
+
+            Console.WriteLine(arrayString1[2]);
+
+            for (int i = 0; i < arrayString1.Length; i++)
+            {
+                Console.WriteLine(arrayString1[i]);
+            }
+
+
+            double[] arrayDouble1 = { 1.1, 2.2, 3.3, 4.4 };
+            {
+                for (int i = 0; i < arrayDouble1.Length; i++)
+                {
+                    Console.WriteLine(arrayDouble1[i]);
+                }
+            }
+
+            char[] arrayChar1 = { 'a', 'b', 'c', };
+            for (int i = 0; i < arrayChar1.Length; i++)
+            {
+                Console.WriteLine(arrayChar1[i]);
+            }
+
+
+            // Aşağıda verilen örnekte kullanıcıdan alınan değerleri dizilerin içerisine atanmaktadır.
+
+            //int[] arrayNumber2 = new int[4];
+
+            //for (int i = 0; i < arrayNumber2.Length; i++)
+            //{
+            //    Console.WriteLine("Please enter your " + (i+1)+ ". index value");
+            //    arrayNumber2[i] = Convert.ToInt32(Console.ReadLine());
+            //}
+            //for (int i = 0; i < arrayNumber2.Length; i++)
+            //{
+            //    Console.WriteLine("Your" + (i+1) +". index is " + arrayNumber2[i]);
+            //}
 
 
 
+            //             FOREACH DÖNGÜSÜ
 
+            // For döngüsüyle çok benzerdir. Yazımı daha kolaydır. Her bir değer için ayrı bir ayrı kod yazılmasına gerek kalmaksızın tek seferde her değeri tek tek çalıştırır.
 
+            string[] foreachExample1 = { "Car", "Phone", "Book", "Computer" };
+
+            foreach (string item in foreachExample1)
+            {
+                Console.WriteLine(item);
+            }
 
             Console.ReadLine();
 
