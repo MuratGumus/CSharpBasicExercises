@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using vsdeneme2;
 
 namespace ByteExercises
 {
@@ -694,6 +695,9 @@ namespace ByteExercises
                 Console.WriteLine(item);
             }
 
+
+            // --------------       METHODLAR    ----------------------- 
+
             //MethodExample1(); // Bu method konsola "Hello World!" yazdırır
 
             //MethodExample2(); // Bu method parantez içerisine yazılan iki değeri toplar. Değer döndürmeyen methodla toplar
@@ -719,10 +723,80 @@ namespace ByteExercises
 
             //Console.WriteLine(MethodExample4(MethodExample4Number3, MethodExample4Number4));
 
-            //--------
+
+            //             CONSTRUCTOR METHOD (YAPICI METHOD)
+
+            // Contructor methodlar, bir class'ın içerisinde tanımlanan o class'a özgü olan, geriye dönüşü olmayan, o class ile aynı ismi taşımak zorunda olan methodtur. "ClassCars classCars1 = new ClassCars();" ifadesindeki "new classCars1"in henüz "classCars1"e araması yapılmadan önce çalıştırdığı kodtur. Atamalar sağdan sola doğru yapıldığı için atama işleminin hemen öncesinde "new classCars1" çalışır sonra atama işlemi yapılır.
+
+            int carDoor2 = 4;
+            string carModel2 = "Renault";
+            string carColur2 = "Red";
+
+            //ClassCars cars2 = new ClassCars(4, "Renault", "Red"); // Yukarıda ayrı ayrı değer verilmeksizin bu şekilde de değer verilebilir.
+            ClassCars cars2 = new ClassCars(carDoor2, carModel2, carColur2);
+
+
+            Console.WriteLine("Car's colour is " + cars2.carColour);
+            Console.WriteLine("Car's model is " + cars2.carColour);
+            Console.WriteLine("There are " + cars2.carDoor + "doors");
 
 
 
+
+
+            // --------------       CLASS    ----------------------- 
+
+            // Solution Explorer kısmında "classCars1" ismiyle tanımladığımız class'ı buraya çağırıyoruz.
+
+            ClassCars classCars1 = new ClassCars(0,"","");  // ClassCars()'de parantez içerisine değer yazılması gerekiyor. İster default değer atarız, 
+
+            classCars1.carDoor = 4;
+            classCars1.carColour = "Red";
+            classCars1.carModel = "Renault";
+
+            classCars1.carStart();
+            classCars1.carDoorClose();
+
+            Console.WriteLine($"There are {classCars1.carDoor} doors");
+            Console.WriteLine($"Car's colour is {classCars1.carDoor}");
+            Console.WriteLine($"Car's model is {classCars1.carModel}");
+
+
+            //             PUBLİC AND PRIVATE 
+
+            // Aşağıda public ve private örnekleri verilmiştir. Customer isimli class oluşturuldu. O class ile bağlantılı olarak çalışıldı.
+
+            Customer customer1 =  new Customer();
+
+            customer1.Name = "Sebastian";
+            customer1.Surname = "Vettel";
+            customer1.Salary = 1000;
+            customer1.Gender = "Male";
+
+            //  customer1.age = 20; // Age bilgisi private olduğu için buradan erişemeyiz. Hata verir. Private bilgiler sadece tanımlandığı class'ın içerisinden erişilebilir.
+
+
+
+            // --------------       ENCAPSULATİON    ----------------------- 
+
+            //Private classlara dışarıdan erişim sağlayamıyoruz. Ancak bu private'ları kullanmamız gerektiğinde encapsulation ile erişim sağlayabiliyoruz.
+
+            // Aşağıda Encapsulation örneği verilmiştir.
+
+            Encapsulation student1 = new Encapsulation();
+
+            student1.setName("Sebastian");  // Normalde private olanlara erişemiyoruz ancak setName ile değer ataması yapıp private bilgiyi kullanabiliyoruz.
+            student1.getName(); //setName ile private'ın içerisine ataması yapılan değere getName ile erişebiliriz.
+
+            string getName1 = student1.getName();  // Kapsullemenin neden ve nasıl kullanıldığına dair bir örnek.
+            if (getName1=="Sebastian")
+            {
+                Console.WriteLine("Succesfull");
+            }
+            else
+            {
+                Console.WriteLine("Unsuccesfull");
+            }
 
 
 
